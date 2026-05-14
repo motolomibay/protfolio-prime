@@ -1,26 +1,73 @@
 export const personalInfo = {
   name: "Motolomi Feleke",
-  title: "Full Stack Engineer & AI Engineer",
+  title: "Full-Stack Engineer → AI Engineer",
   tagline:
-    "I build scalable web applications and integrate AI to solve real-world problems.",
+    "I build production AI products with engineered feedback loops — models that measurably improve through user interaction.",
   email: "motolomifeleke@gmail.com",
   github: "https://github.com/motolomibay",
-  linkedin: "https://linkedin.com/in/motolomifeleke",
+  linkedin: "https://www.linkedin.com/in/motolomi-feleke-fanta-987ba6328/",
   location: "Addis Ababa, Ethiopia",
   availableForRemote: true,
 };
 
-export const aboutText = `Full Stack Engineer & AI Engineer with 5+ years of production-grade experience in Python and TypeScript.
-I hold a BSc in Software Engineering from Addis Ababa University (CGPA 3.70) and specialize in building
-scalable web applications and integrating AI capabilities including RAG pipelines, agentic workflows,
-and LLM orchestration. Currently working as an AI Training Engineer at Revelo, contributing to RLHF
-and model-training workflows. I've solved 500+ algorithmic problems through the A2SV Coding Academy,
-and I'm passionate about building technology that creates real impact.`;
+export const aboutText = `Full-stack engineer with 5+ years shipping production Python and TypeScript systems, now building AI products full-time as Lead Engineer at Privy-MVP.
+
+At Privy I own the full AI stack: LLM applications on Vercel AI SDK + Fireworks AI (MiniMax-M2.1, 228B MoE), end-to-end observability with Logfire and OpenTelemetry, a custom cross-session memory system with insight extraction and semantic retrieval, and evaluation pipelines (golden sets + LLM-as-judge) so every prompt change ships behind measurable quality gates.
+
+Prior work includes an ESG platform handling 50K+ daily API requests at Hydrus.AI, RAG pipelines and vector search for a medical product, and AI model-training data at Revelo.
+
+I treat AI as an engineering discipline — every feedback loop is measured, every system is production-grade. BSc Software Engineering (AAU, CGPA 3.70) · 500+ DSA problems · IBM Full-Stack · ALX AiCE.`;
 
 export const stats = [
+  { label: "Years of Production Experience", value: "5+" },
+  { label: "Daily API Requests Served", value: "50K+" },
   { label: "DSA Problems Solved", value: "500+" },
-  { label: "Years Experience", value: "5+" },
   { label: "Projects Delivered", value: "10+" },
+];
+
+export const services = [
+  {
+    icon: "🤖",
+    title: "AI Agent Systems",
+    description:
+      "Custom LLM-powered agents and multi-step agentic workflows using LangChain and LangGraph. From single-task bots to complex multi-agent pipelines.",
+    tags: ["LangChain", "LangGraph", "OpenAI", "Python"],
+  },
+  {
+    icon: "🔍",
+    title: "RAG Pipelines",
+    description:
+      "Retrieval-Augmented Generation systems with vector database integration and semantic search. Make your data queryable by AI.",
+    tags: ["RAG", "Vector DBs", "LangChain", "FastAPI"],
+  },
+  {
+    icon: "⚡",
+    title: "Production Full-Stack Apps",
+    description:
+      "End-to-end web applications built with Django, FastAPI, React, and Next.js. Async-first, tested, and ready for scale.",
+    tags: ["Django", "FastAPI", "React", "Next.js", "TypeScript"],
+  },
+  {
+    icon: "🔗",
+    title: "API Integration & Automation",
+    description:
+      "Connect systems, automate workflows, and replace manual processes with reliable backend services and event-driven pipelines.",
+    tags: ["REST", "GraphQL", "Node.js", "PostgreSQL", "Redis"],
+  },
+  {
+    icon: "🧪",
+    title: "LLM Evaluation & RLHF",
+    description:
+      "Code and output evaluation for AI model training. Identifying hallucinations, edge cases, and security issues in AI-generated code.",
+    tags: ["RLHF", "LLM Evaluation", "Python", "TypeScript"],
+  },
+  {
+    icon: "🏗",
+    title: "Codebase Modernization",
+    description:
+      "Legacy Python to async/await, JavaScript to strict TypeScript, untested monoliths to modular services with CI/CD.",
+    tags: ["Python", "TypeScript", "Docker", "GitHub Actions"],
+  },
 ];
 
 export const skills = {
@@ -31,9 +78,8 @@ export const skills = {
       "Next.js",
       "TypeScript",
       "JavaScript (ES6+)",
-      "HTML5",
-      "CSS3",
       "Tailwind CSS",
+      "Framer Motion",
       "React Native",
       "Flutter",
     ],
@@ -49,23 +95,29 @@ export const skills = {
       "Express.js",
       "RESTful APIs",
       "GraphQL",
+      "async/await",
+      "WebSockets",
     ],
   },
   ai: {
-    title: "AI & ML",
+    title: "AI & LLM Engineering",
     items: [
-      "RLHF",
-      "LLM Evaluation",
+      "Vercel AI SDK",
+      "Fireworks AI / MiniMax",
+      "LLM Observability (Logfire, OpenTelemetry)",
+      "LLM Evals (offline + LLM-as-judge)",
       "RAG Pipelines",
-      "LangChain",
-      "LangGraph",
       "Vector Databases",
-      "LLM Integration",
-      "Agentic AI Workflows",
+      "Agents & Tool Calling",
+      "Memory Systems",
+      "RLHF Data",
+      "LangChain",
+      "Prompt Engineering",
+      "Streaming + Structured Outputs",
     ],
   },
-  database: {
-    title: "Database & Cloud",
+  devops: {
+    title: "Data & DevOps",
     items: [
       "PostgreSQL",
       "MongoDB",
@@ -73,7 +125,8 @@ export const skills = {
       "Firebase",
       "Docker",
       "CI/CD",
-      "Git/GitHub",
+      "GitHub Actions",
+      "Git",
       "Vercel",
     ],
   },
@@ -81,15 +134,27 @@ export const skills = {
 
 export const experiences = [
   {
-    role: "AI Training Engineer",
+    role: "Lead Engineer",
+    company: "Privy-MVP",
+    location: "Remote",
+    period: "Feb 2026 – Present",
+    highlights: [
+      "Build production LLM agents with tool calling using Vercel AI SDK + Fireworks AI (MiniMax-M2.1, 228B MoE) — three coaching modes (Vent, Decision Lab, Reframe) each driven by framework-specific system prompts",
+      "Design and ship a cross-session memory system from scratch: automatic insight extraction per turn, memory compaction, 60%-threshold similarity dedup, and a natural-language searchMemories tool agents invoke at runtime",
+      "Instrument the full LLM stack with Logfire / OpenTelemetry: per-request tracing, token counts, latency histograms, prompt-cache hit-rate, and cost attribution per feature",
+      "Design offline evaluation pipelines (golden sets + LLM-as-judge regression suites) so every prompt change ships behind measurable quality gates",
+      "Own the full product: Next.js 16 + PostgreSQL + Drizzle backend, WebAuthn passkey auth, AES-256-GCM vault, IP rate limiting, Stripe subscriptions, and the React/Tailwind UI",
+    ],
+  },
+  {
+    role: "AI Training Engineer (Python / TypeScript)",
     company: "Revelo",
     location: "Remote",
-    period: "Oct 2025 – Present",
+    period: "Oct 2025 – Feb 2026",
     highlights: [
-      "Designing and running model-training workflows for LLM improvement",
-      "Conducting RLHF (Reinforcement Learning from Human Feedback) evaluations",
-      "Reviewing and annotating AI-generated code for quality and correctness",
-      "Contributing to data pipelines that improve model alignment and performance",
+      "Produced RLHF and fine-tuning datasets for Python/TypeScript models: annotated preference pairs, failure modes, edge cases, and security vulnerabilities with detailed rationales shaping model training",
+      "Evaluated model-generated code for correctness, hallucinations, and behavioral drift across async/await, generators, decorators, and TypeScript strict-mode patterns",
+      "Built deep understanding of how training data quality translates to model evaluation metrics — from annotation consistency to behavioral coverage",
     ],
   },
   {
@@ -98,10 +163,11 @@ export const experiences = [
     location: "US-Based (Remote)",
     period: "Mar 2023 – Sep 2025",
     highlights: [
-      "Built an ESG carbon emission management system serving 50K+ daily API requests",
-      "Developed AI automation for Sifnos.ai medical platform",
-      "Implemented RAG pipelines and vector databases for intelligent data retrieval",
-      "Designed agentic AI workflows using LangChain and LangGraph",
+      "Built ESG carbon emissions platform processing 50K+ daily API requests across FastAPI, Django, and Node.js",
+      "Designed agentic AI workflows for Sifnos.ai medical platform using LangChain and LangGraph",
+      "Built RAG pipelines and vector database integrations for intelligent medical document retrieval and semantic search",
+      "Led codebase migration from legacy Python to async/await patterns and introduced strict TypeScript across Node.js layer",
+      "Collaborated with distributed engineers across 3 time zones, championing code reviews and async communication",
     ],
   },
   {
@@ -110,9 +176,10 @@ export const experiences = [
     location: "Addis Ababa, Ethiopia",
     period: "Jun 2022 – Feb 2023",
     highlights: [
-      "Led performance optimization initiatives across multiple client projects",
-      "Collaborated with cross-functional teams to deliver scalable solutions",
-      "Mentored junior developers and conducted code reviews",
+      "Improved API throughput by 30% through Redis caching, query tuning, and async refactoring across Django and Node.js services",
+      "Reduced deployment errors by 60% by designing CI/CD pipelines with GitHub Actions enabling daily release cycles",
+      "Mentored 4 junior developers on clean code, modern Python idioms, and testing best practices",
+      "Authored post-mortems and documentation to prevent regressions across Python and JavaScript stacks",
     ],
   },
   {
@@ -121,72 +188,103 @@ export const experiences = [
     location: "Addis Ababa, Ethiopia",
     period: "Mar 2021 – May 2022",
     highlights: [
-      "Developed ERP applications with React, Node.js, and Django",
-      "Worked with MongoDB and PostgreSQL for data management",
-      "Built responsive interfaces with modern JavaScript frameworks",
+      "Built web applications and ERP solutions using Django and React/TypeScript for clients in healthcare, retail, and logistics",
+      "Reduced page load times by 35% by implementing real-time WebSocket features and optimizing rendering",
+      "Built secure RESTful APIs with Django REST Framework and Node.js, integrated with PostgreSQL and MongoDB for multi-tenant systems",
     ],
   },
 ];
 
 export const projects = [
   {
+    slug: "privy-mvp",
+    title: "Privy — Privacy-First AI Coaching Platform",
+    description:
+      "Production AI coaching platform with three specialized agents (Vent, Decision Lab, Reframe). Features streaming LLM responses, a cross-session memory system with automatic insight extraction and semantic retrieval, full LLM observability with Logfire/OpenTelemetry, and WebAuthn passkey auth with an AES-256-GCM encrypted vault.",
+    techStack: [
+      "Next.js 16",
+      "Vercel AI SDK",
+      "Fireworks AI",
+      "TypeScript",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Redis",
+      "Logfire",
+      "OpenTelemetry",
+      "Stripe",
+      "WebAuthn",
+    ],
+    highlights: [
+      "Three LLM coaching agents with tool calling and framework-specific system prompts",
+      "Cross-session memory system: insight extraction, compaction, 60% similarity dedup, semantic search",
+      "Full LLM observability: request tracing, token/latency metrics, prompt-cache hit-rate, cost attribution",
+    ],
+    category: "AI Engineering",
+    githubUrl: "",
+    liveUrl: "",
+    featured: true,
+  },
+  {
     slug: "esg-carbon-tracker",
     title: "ESG Carbon Emission Management System",
     description:
-      "Full-stack ESG management platform for tracking and managing carbon emissions. Built with MERN stack featuring real-time dashboards, reporting, and compliance tracking. Handles 50K+ daily API requests.",
-    techStack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+      "Production full-stack ESG platform tracking and managing carbon emissions at scale. Real-time dashboards, automated compliance reporting, and a multi-tenant API layer handling 50K+ daily requests.",
+    techStack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Docker"],
     highlights: [
-      "Real-time carbon emission dashboards",
-      "Automated compliance reporting",
-      "50K+ daily API requests at scale",
+      "50K+ daily API requests in production",
+      "Real-time carbon emission dashboards with automated compliance reporting",
+      "Multi-tenant architecture with role-based access control",
     ],
     category: "Full Stack",
     githubUrl: "https://github.com/motolomibay/esg-carbon-tracker",
+    liveUrl: "",
     featured: true,
   },
   {
     slug: "sifnos-ai-medical",
-    title: "Sifnos.ai Medical Platform",
+    title: "Sifnos.ai — AI-Powered Medical Platform",
     description:
-      "AI-powered medical platform with RAG pipelines for intelligent medical data retrieval. Implements agentic AI workflows for automated medical document processing.",
+      "Agentic AI backend for an intelligent medical platform. RAG pipelines retrieve and reason over medical documents; LangGraph orchestrates multi-step agentic workflows for automated document processing and semantic search.",
     techStack: [
       "Python",
       "LangChain",
       "LangGraph",
-      "React",
+      "FastAPI",
       "Vector DB",
-      "RAG",
+      "React",
     ],
     highlights: [
-      "RAG pipeline for medical document retrieval",
-      "Agentic AI workflows for automated processing",
-      "Vector database integration for semantic search",
+      "RAG pipeline for medical document retrieval and reasoning",
+      "Multi-step agentic workflows with LangGraph for automated processing",
+      "Vector database + semantic search for intelligent data access",
     ],
-    category: "AI / Full Stack",
+    category: "AI Automation",
     githubUrl: "https://github.com/motolomibay/sifnos-ai",
+    liveUrl: "",
     featured: true,
   },
   {
     slug: "portfolio-website",
     title: "Developer Portfolio",
     description:
-      "Modern developer portfolio built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations, responsive design, and optimized performance.",
+      "This portfolio — built with Next.js 15, TypeScript, Tailwind CSS 4, and Framer Motion. Server-rendered, mobile-first, and fully data-driven.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     highlights: [
       "Server-side rendering for SEO",
-      "Smooth scroll animations",
+      "Smooth scroll animations with Framer Motion",
       "Mobile-first responsive design",
     ],
     category: "Frontend",
     githubUrl: "https://github.com/motolomibay/protfolio-prime",
-    featured: true,
+    liveUrl: "https://protfolio-prime.vercel.app",
+    featured: false,
   },
 ];
 
 export const certifications = [
   {
     title: "IBM Full Stack Software Developer",
-    issuer: "IBM (via Coursera)",
+    issuer: "IBM Skills Network",
     year: "2025",
     description:
       "Professional Certificate covering React, Node.js, Cloud, DevOps, and full-stack development practices.",
@@ -194,7 +292,7 @@ export const certifications = [
   },
   {
     title: "AI Career Essentials (AiCE)",
-    issuer: "ALX",
+    issuer: "ALX — African Leadership X",
     year: "2025",
     description:
       "AI fundamentals, prompt engineering, and practical AI application development.",
@@ -205,13 +303,14 @@ export const certifications = [
     issuer: "A2SV",
     year: "2023",
     description:
-      "Intensive program focused on advanced DSA and competitive programming. Solved 500+ problems on LeetCode & Codeforces.",
+      "Intensive algorithms and data structures program. Solved 500+ problems on LeetCode and Codeforces.",
     certificateUrl: "",
   },
 ];
 
 export const navLinks = [
   { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
